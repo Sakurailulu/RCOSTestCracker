@@ -8,6 +8,7 @@ Backtests of one course are not categorized nor sorted.
 It would be more efficient if we keep the instructor information and properly organize each version.
 
 Therefore, an application which can have access to all the backtests can serve RPI students well. In fact, most of the colleges have their backtest libraries. 
-The University of College London has a web application, UCL online library, where keeps all the backtests, homework and notes. We intend to implement an online platform for RPI students to share backtests, discuss, and keep track of dues and exams. 
+The University of College London has a web application, UCL online library, where keeps all the backtests, homework and notes.
+We intend to implement an online platform for RPI students to share backtests, discuss, and keep track of dues and exams. 
 Compared to existing resources for RPI backtests, our application enables students to access backtests no matter where they are.
 For volunteers who would like to share their past exams with others, they can simply take pictures and upload to our platform. The integrated calendar marks homework dues, quizzes, and exams. 
