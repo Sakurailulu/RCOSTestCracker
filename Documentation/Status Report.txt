@@ -1,0 +1,33 @@
+#########################################################################################################################################
+This is the Status report updated dynamically by TestCracker developers
+##########################################################################################################################################
+
+
+
+September 20, 2019
+
+Achievement:
+Reviewing the previous codes to get familiar with the work already done.
+Analyzing our major product risk and major project risk
+Proposing a business case for the project (including a short analysis of the competition and market space)
+Plan:
+Download and install Android Studio for creating android emulator for testing
+Improve the design of the database to achieve better performance.
+
+Risk:
+Lack of an Android device to run tests on
+
+
+September 24, 2019
+Achievement:
+Reviewed previous demo video of current version of the application to help team members understand how the application is working 
+Brainstormed to come up with new features we want to develop during this semester
+Prioritized all the features we listed 
+Downloaded and installed Android Studio and successfully created an emulator
+
+Plan:
+Come up with an idea to add all the courses from category automatically. (previously we manually added all the courses. Since the courses provided changed each semester, we want the application to update the course list by automatically extract from RPI )
+Looking for an affordable android device so that group member can test the application on a real android device (basically emulator created by the android studio performed unstably)
+
+Risk:
+The main feature relies on clients to upload the backtest. If there is no client uploading any backtest, the main feature cannot be used.
