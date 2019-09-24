@@ -8,4 +8,7 @@
 用户可以给公共文件“点赞”或“不喜欢”若文件过于老旧或与课程无关 
 7.Improve upload and download speed 加快上传下载速度 
 8.Handle course catalog update each semester 每个学期更新课程列表
-9.Create branches of years for each courses
+9.Create branches of different majors
+10.Create branches of semesters for each courses under each major
+
+
