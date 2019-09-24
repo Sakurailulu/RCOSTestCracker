@@ -1,3 +1,4 @@
+（Need to prioritize）
 1.Support multiple jpg upload and download 支持多图jpg上传及下载
 2.Support pdf upload and download 支持pdf上传及下载
 3.User can submit comments under each file 用户可以在公共文件下留评论
@@ -5,3 +6,5 @@
 5.Add pop-up notification for events on calendar 在日历上标记的事件可以有提示弹窗（提醒用户事件即将开始）
 6."Find it useful" rating for each file. If the material uploaded is irrelevant or outdated, users can rate "thumbs down". 
 用户可以给公共文件“点赞”或“不喜欢”若文件过于老旧或与课程无关 
+7.Improve upload and download speed 加快上传下载速度 
+8.Handle course catalog update each semester 每个学期更新课程列表
