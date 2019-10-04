@@ -31,3 +31,15 @@ Looking for an affordable android device so that group member can test the appli
 
 Risk:
 The main feature relies on clients to upload the backtest. If there is no client uploading any backtest, the main feature cannot be used.
+
+October 4, 2019
+Achievement:
+Learned how to write web crawler to add all the course from category automatically
+Set up an emulator and gave the authorization to download the picture(for the future test purpose)
+Decided to categorize all the course according to school(similar to YACS), then according to the prefix.
+Plan to add a feature that will allow user to delete the documentations that are outdated or documentations that are irrelevant to the course.
+Plan:
+Try to write the web crawler to add all the courses from category automatically
+Start to work on supporting multiple images upload and download
+Risk:
+Since the RPI website may ask for login, do not really sure how to write a web crawler to scrape the website that requires login. Therefore, more time may need for this goal. 
