@@ -4,6 +4,6 @@
 4.ucoz
 5.six6
 6.sitemix
-7.Aliyun
+7.Aliyun  https://www.alibabacloud.com/product/oss?spm=a3c0i.239195.1097638.dnavproductsb1.575712bd7zzXOd
 8.Baiduyun
 9.Tencentyun
