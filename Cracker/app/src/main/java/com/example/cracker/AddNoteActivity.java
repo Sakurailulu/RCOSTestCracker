@@ -10,3 +10,17 @@ import android.widget.TextView;
 
 import com.example.cracker.bean.Note;
 import com.example.cracker.utils.DBDao;
+
+
+public class AddNoteActivity extends BaseActivity  {
+	EditText mEtTitle;
+    EditText mEtContent;
+    TextView mBtAdd;
+    private String year;
+    private String month;
+    private String day;
+
+
+
+
+}
