@@ -56,6 +56,7 @@ public class SearchActivity extends BaseActivity {
         initView();
     }
 
+    //test to check if support search by course name, abbreviation?, instructor name, dept, course id and etc.
 
     private void initView() {
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
