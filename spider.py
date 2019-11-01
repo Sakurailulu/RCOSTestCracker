@@ -30,9 +30,20 @@ for c in course_list:
 		ctitle.append(tt)
 ctitle_set = list(set(ctitle))
 ctitle_set.sort(key=ctitle.index)
+ctitle_list = list(ctitle_set)
 names = np.array(cn)
 crn = np.array(ccrnn)
 title = np.array(ctitle_set)
+
+file1 = 'course_title.json'
+with open(file1, 'w') as file_object:
+	json.dump(ctitle_list, file_object)
+file2 = 'course_name.json'
+with open(file2, 'w') as file_object:
+	json.dump(cn, file_object)
+file3 = 'course_crn.json'
+with open(file3, 'w') as file_object:
+	json.dump(ccrnn, file_object)
 
 
 # url = 'https://sis.rpi.edu/reg/zs201909.htm'
