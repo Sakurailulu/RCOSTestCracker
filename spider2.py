@@ -47,8 +47,17 @@ def write(year, cn, ccrnn, ctitle):
 
 
 if __name__ == '__main__':
-	year = 2019
+	now = datetime.datetime.today()
+	now_time = str(now)
+	y_pos = now_time.find('-')
+	year_s = now_time[0:y_pos]
+	year = int(year_s)
+	remain = now_time[y_pos + 1:]
+	y_mon = remain.find('-')
+	month = remain[0:y_mon]
 	semester = '09'
+	if int(month) <= 6:
+		semester = '01'
 	while True:
 		header = 'https://sis.rpi.edu/reg/zs'
 		tail = '.htm'
