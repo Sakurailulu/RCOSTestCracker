@@ -1,6 +1,7 @@
 import requests
 import re
 import numpy as np
+import datetime
 import json
 from bs4 import BeautifulSoup
 
@@ -28,10 +29,16 @@ def parse(html):
 	ctitle_set = list(set(ctitle))
 	ctitle_set.sort(key=ctitle.index)
 	ctitle_list = list(ctitle_set)
+	ccn_set = list(set(cn))
+	ccn_set.sort(key=cn.index)
+	cn_list = list(ccn_set)
+	ccrnn_set = list(set(ccrnn))
+	ccrnn_set.sort(key=ccrnn.index)
+	ccrnn_list = list(ccrnn_set)
 	names = np.array(cn)
 	crn = np.array(ccrnn)
 	title = np.array(ctitle_set)
-	return cn, ccrnn, ctitle_list
+	return cn_list, ccrnn_list, ctitle_list
 
 def write(year, cn, ccrnn, ctitle):
 	file1 = str(year) + '_course_title.json'
