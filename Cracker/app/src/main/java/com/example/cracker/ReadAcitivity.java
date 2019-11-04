@@ -18,6 +18,7 @@ public class ReadActivity extends CourseDetailActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coursedetail);
        try {
+       		// read from json
 	       	InputStream is = CourseDetailActivity.this.getClass().getClassLoader().getResourceAsStream("assets" + "2019_course_name.json")
 	       	BufferedReader read = new BufferedReader(new InputStreamReader(is));
 	       	String line;
@@ -27,6 +28,8 @@ public class ReadActivity extends CourseDetailActivity {
 	       	}
 	       	is.close();
 	       	read.close();
+
+	       	// change string to Object for use
 	       	try {
 	       		JSONObject root = new JSONObject(builder.toString());
 	       		JSONArray info = root.getJSONArray();
