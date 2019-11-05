@@ -26,10 +26,25 @@ def parse(html):
 			(c, t) = new_r22.split(' ')
 			ccrnn.append(c)
 			ctitle.append(t)
-	names = np.array(cn)
-	crn = np.array(ccrnn)
-	title = np.array(ctitle)
-	return cn, ccrnn, ctitle
+	ctitle_list = [ctitle[0]]
+	rep = []
+	i = 1
+	while i < len(ctitle):
+		if ctitle[i] == ctitle_list[-1]:
+			rep.append(i)
+			i += 1
+			continue
+		ctitle_list.append(ctitle[i])
+		i += 1
+	cn_list = []
+	j = 0
+	while j < len(cn):
+		if j in rep:
+			j += 1
+			continue
+		cn_list.append(cn[j])
+		j += 1
+	return cn_list, ccrnn, ctitle_list
 
 def write(year, cn, ccrnn, ctitle):
 	file1 = str(year) + '_course_title.json'
