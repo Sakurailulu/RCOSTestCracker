@@ -15,10 +15,10 @@ options.headless = True
 browser = webdriver.Firefox(options=options)
 browser.get(url)
 user = browser.find_element_by_id("UserID")
-user.send_keys("660286461")
+user.send_keys("")
 browser.implicitly_wait(5)
 pw = browser.find_element_by_name("PIN")
-pw.send_keys("Kk1317111317")
+pw.send_keys("")
 browser.implicitly_wait(5)
 browser.find_element_by_xpath("//input[@type='submit' and @value='Login']").click()
 
