@@ -72,29 +72,29 @@ for idx in range(0, num):
 	browser.find_element_by_xpath("//input[@type='submit' and @value='Submit']").click()
 
 
-# subj_n = ''
-# crse_n = ''
-# subj_crse = ''
-# s1 = Select(browser.find_element_by_id("subj_id"))
-# s1.select_by_index(3)
-# browser.find_element_by_xpath("//input[@type='submit' and @value='Section Search']").click()
-# find_idx = -1
-# for index_info in browser.find_element_by_xpath("//table[@class='datadisplaytable']").find_elements_by_tag_name('th'):
-# 	if index_info.text == 'Subj':
-# 		subj_idx = find_idx
-# 	elif index_info.text == 'Crse':
-# 		crse_idx = find_idx
-# 	elif index_info.text == 'Title':
-# 		title_idx = find_idx
-# 	find_idx += 1
-# numm = len(browser.find_element_by_xpath("//table[@class='datadisplaytable']").find_elements_by_tag_name('tr'))
-# for i in range(3, numm):
-# 	path1 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(subj_idx + 1) + "]"
-# 	path2 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(crse_idx + 1) + "]"
-# 	path3 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(title_idx + 1) + "]"
-# 	t1 = browser.find_element_by_xpath(path1)
-# 	t2 = browser.find_element_by_xpath(path2)
-# 	t3 = browser.find_element_by_xpath(path3)
+subj_n = ''
+crse_n = ''
+subj_crse = ''
+s1 = Select(browser.find_element_by_id("subj_id"))
+s1.select_by_index(3)
+browser.find_element_by_xpath("//input[@type='submit' and @value='Section Search']").click()
+find_idx = -1
+for index_info in browser.find_element_by_xpath("//table[@class='datadisplaytable']").find_elements_by_tag_name('th'):
+	if index_info.text == 'Subj':
+		subj_idx = find_idx
+	elif index_info.text == 'Crse':
+		crse_idx = find_idx
+	elif index_info.text == 'Title':
+		title_idx = find_idx
+	find_idx += 1
+numm = len(browser.find_element_by_xpath("//table[@class='datadisplaytable']").find_elements_by_tag_name('tr'))
+for i in range(3, numm):
+	path1 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(subj_idx + 1) + "]"
+	path2 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(crse_idx + 1) + "]"
+	path3 = ".//table[@class='datadisplaytable']/tbody/tr[" + str(i) + "]/td[" + str(title_idx + 1) + "]"
+	t1 = browser.find_element_by_xpath(path1)
+	t2 = browser.find_element_by_xpath(path2)
+	t3 = browser.find_element_by_xpath(path3)
 
 
 # trlist = browser.find_element_by_xpath("//table[@class='datadisplaytable']").find_elements_by_tag_name("tr")
@@ -145,5 +145,4 @@ title_list = list(title_set)
 sub_set = list(set(subj_crses))
 sub_set.sort(key=subj_crses.index)
 sub_list = list(sub_set)
-browser.quit()
-browser.quit()
+browser.close()
