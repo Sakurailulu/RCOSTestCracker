@@ -33,6 +33,18 @@ public class ReadActivity extends CourseDetailActivity {
 	       			JSONObject inf = info.getJSONObject(i);
 	       		}
 	       	}
+	       	folderList = new ArrayList<>();
+            for (int i = 0; i < courseJsonArray.length(); i++) {
+                JSONObject courseJsonObject = courseJsonArray.getJSONObject(i);
+                Folder folder = new Folder();
+                folder.setId(courseJsonObject.getInt("id"));
+                folder.setTitle(courseJsonObject.getString("title"));
+                folder.setContent(courseJsonObject.getString("content"));
+                folder.setPath(courseJsonObject.getString("path"));
+                folder.setFileName(courseJsonObject.getString("fileName"));
+                folder.setLikeNum(courseJsonObject.getInt("likeNum"));
+                folder.setDislikeNum(courseJsonObject.getInt("dislikeNum"));
+                folderList.add(folder);
 	       	catch (JSONException e) {
 	       		e.printStackTrace();
 	       	}
