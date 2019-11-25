@@ -1,0 +1,3 @@
+//some documents and websites that may be helpful for app publishing
+https://developer.android.com/studio/publish
+https://developer.android.com/studio/publish#publishing-website
